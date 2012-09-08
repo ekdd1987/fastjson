@@ -14,7 +14,7 @@ public class Case0 extends TestCase {
         String jsonString = JSON.toJSONString(entity);
 
         System.out.println(jsonString);
-
+        System.out.println("hello world");
         V0 entity2 = JSON.parseObject(jsonString, V0.class);
         Assert.assertEquals(entity.getValue(), entity2.getValue());
     }
